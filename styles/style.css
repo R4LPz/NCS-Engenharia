@@ -1,0 +1,930 @@
+/*
+ *  Formatação e Layout
+ *
+ *  contract =>  estilização da estrutura basica das paginas
+ *  elements =>  body, html
+ *  content  =>  -
+ */
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    scroll-behavior: smooth;   
+}
+
+
+
+/*
+ *  SEÇÃO COM ELEMENTOS GERAIS
+ *  Elementos de css dessa seção sao gerais para 1 ou mais
+ *  paginas e se encontram agrupados 
+ */
+
+/*
+ *  MENU FIXO SUPERIOR
+ *
+ *  contract =>  estilização do menu superior para todas as paginas
+ *  elements =>  menu superior
+ *  content  =>  -
+ */
+ 
+#menu{
+    background: linear-gradient(to top, white, lightblue);
+    width: 100%;   
+    height: 7%;
+    border-bottom: 4px solid darkgreen;
+    z-index: 2;
+}
+
+#logo img{
+    margin-left: 6%;   
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 20%;
+    
+}
+
+#menu ul{   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+
+#menu ul a{    
+    text-align: center;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: darkgreen;   
+    white-space: nowrap;
+}
+
+
+#menu ul a:hover{    
+    background: linear-gradient(to top ,  #001a00, green,  #001a00);
+    color:   white;
+    border-radius: 5px;
+}
+
+#inicio .inicio  a,
+#quem-somos .quem-somos  a,
+#projetos .projetos a,
+#servicos .servicos a,
+#contato .contato a{
+    background: linear-gradient(to top ,  #001a00, green,  #001a00);
+    color:   white;
+    border-radius: 5px;
+}
+/*
+ *  FIM DE MENU INICIAL  
+ */
+
+
+
+ /*
+ *  Folder
+ *
+ *  contract =>  estilização dos folder iniciais
+ *  elements =>  folder de apresentação
+ *  content  =>  folder *
+ */
+
+.folder{
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;    
+}
+
+.folder div{
+    margin-bottom: 3%;
+    padding: 10%;
+}
+
+.folder span{
+    display: block;   
+    margin-bottom: 5%;
+    animation-name: folder-animation;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+
+.folder h1{
+    display: inline;
+    color: black;
+    font-size: 2em;
+    border-radius: 10px;
+    padding: 1%;
+    color: black;
+    
+}
+
+@keyframes folder-animation{
+    0%{
+        opacity: 0;
+        transform:translateX(80%);
+    }
+
+    25%{
+        opacity: 1;
+        transform:scale(1,1);
+    }
+
+}
+
+.folder span:nth-child(2){
+    animation-delay: 0.08s;
+}
+/*
+ *  FIM DE FOLDER
+ */
+
+
+
+ /*
+ *  FOOTER
+ *
+ *  contract =>  estilização do rodapé 
+ *  elements =>  links de empresas parceiras, animações de logos, e direitos autorais
+ *  content  =>  footer, parceiros, foto, animacao, keyframes, left, right
+ */
+
+#footer{
+    clear: both;    
+    background:#262626  ;    
+    text-align: center;
+    padding: 1% 3%;
+    color: grey;
+}
+
+#footer a{
+    clear: both;
+    text-decoration: none;
+    color: gray;  
+}
+
+
+#footer hr{
+    margin: 2% 0px;
+    clear: both;
+}
+
+#footer h1{
+    font-size: 1.6em;
+    font-style: italic;
+    font: bold;
+    text-align: center;
+    color: gray;
+    margin-bottom: 2%;
+}
+
+/*
+ *  FIM DE FOOTER
+ */
+
+
+#contato{
+    background: rgb(243, 250, 250) ;
+}
+
+.parceiros h1{
+    font-size: 1.7em;
+    color: darkgreen;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 1%;
+    font-style: italic;
+    clear: both;
+    
+}
+
+
+.container{
+    padding: 1%;
+    margin-bottom: 2%;
+    background: linear-gradient(to left, azure, white, azure);
+}
+
+.img{
+    height: 55px;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide  img {
+    width: 85%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+ /*
+ *  VOLTAR AO TOPO
+ *
+ *  contract =>  estilização do botao voltar ao topo 
+ *  elements =>  botao lateral fixo
+ *  content  =>  clear, voltar ao topo
+ */
+
+.clear{
+    clear: both;
+}
+
+#voltar-topo{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0.7%;
+    background-color: green;
+    border-radius: 5px 5px 0 5px;
+    opacity: 0.8;
+}
+
+#voltar-topo a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#voltar-topo:hover{
+    background-color: darkgreen;
+    opacity: 1;
+}
+/*
+ *  FIM DE VOLTAR AO TOPO
+ */
+
+/*
+ *  FIM DA SEÇÃO DE CONTEUDOS GERAIS
+ */
+
+
+
+
+
+
+/*
+ *  SEÇÃO COM ELEMENTOS ESPECIFICOS
+ *
+ *  Elementos de css dessa seção sao especificos para cada pagina
+ *  paginas estao agrupadas em tópicos 
+ */
+
+
+
+/*
+ *  INDEX
+ *
+ *  contract => estilização do conteudo da pagina inicial  
+ *  elements => container com textos, videos,imagens e cards para links 
+ *  content  => index-conteudo, header, content-left, content-right, index-cards* 
+ */
+
+#index-background{    
+    height: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../resources/images/sky.jpeg');
+    padding: 8%;
+}
+
+.index-conteudo{
+    background: white;
+    padding: 6% 7%;
+    opacity: 0.85;  
+}
+
+.index-conteudo .header{
+    margin-bottom: 5%;
+
+}
+
+.index-conteudo .header h1{
+    text-align: center;
+    font-size: 2em;
+    color: #151551;
+}
+
+.index-conteudo .header h3{
+    text-align: center;
+    font-size: 1.6em;    
+    color: #151551;
+    margin: 3% 0 8% 0;
+}
+
+.index-conteudo .header p{
+    text-align: justify;
+    color: black;
+    font-size: 1em;
+}
+
+.index-conteudo .content-left{
+    width: 47%;
+    float: left;
+    padding: 3%;
+    box-sizing: border-box; 
+}
+
+.index-conteudo .content-left h3{
+    text-align: center;
+    color:    #151551;
+    font-size: 1.4em;
+    margin-bottom: 4%;
+}
+
+.index-conteudo .content-left p{
+    text-align: justify;  
+    font-size: 1em;
+}
+
+.index-conteudo .content-left .img1{
+    border-radius: 3px;
+    margin-bottom: 3%;    
+    width: 90%;
+    margin-left: 5%;
+    
+    box-sizing: border-box;
+}
+
+.index-conteudo .content-right{
+    width: 47%;
+    float: right;
+    
+}
+
+.index-conteudo .content-right h3{
+    text-align: center;
+    font-size: 1.4em;
+    color:    #151551;
+}
+
+.index-conteudo .content-right h4{
+    text-align: center;
+    font-size: 1.3em;
+    color:    #151551;
+}
+
+.index-conteudo .content-right p{
+    text-align: justify;
+}
+
+.index-cards{
+    clear: both;
+    padding: 10% 0;  
+}
+
+.index-cards .card{
+    float: left;
+    height: 23rem;
+    width: 29%;  
+    border: 3px solid black;
+    background-color: white;
+}
+
+.index-cards .card-mid{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.index-cards .card:hover{
+    float: left;
+    width: 29%;    
+    border: 3px solid darkgreen;
+    transform: scale(1.05,1.05);
+    background: linear-gradient(to top left, palegreen, snow) ;
+}
+
+.index-cards .card-img-top{
+    width: 25%;
+    margin: 10% 37.5%;
+}
+
+.index-cards .card-body{
+    padding: 10% 10%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.index-cards .card-body button{
+    background-color: green;
+    border: 1px solid darkgreen;  
+    color: white;
+    padding: 5%;
+}
+
+.index-cards .card-body button:hover{
+    background-color: white;
+    border: 1px solid green;    
+    color: green;
+    padding: 5%;
+}
+/*
+ *  FIM DE INDEX
+ */
+
+
+
+/*
+ *  QUEM SOMOS
+ *
+ *  contract =>  estilização do conteudo da pagina "quem somos" exceto folder
+ *  elements =>  conteudo textual de intrudução, perfis, video da empresa e encaminhamento para contato
+ *  content  =>  quem-somos-conteudo, intro, perfil
+ */
+
+.quem-somos-folder{
+    background-image: url('../resources/images/2658311.jpg');
+}
+
+#quem-somos-conteudo{
+    padding: 5% 10%;
+    text-align: center;
+}
+
+#quem-somos-conteudo hr{
+    margin-bottom: 5%;
+}
+
+#quem-somos-conteudo a{
+    display: block;
+    border:  1px solid green;
+    padding: 1.8%;
+    text-decoration: none;
+    color: white;
+    background: darkgreen;
+    border-radius: 5px;
+}
+
+#quem-somos-conteudo a:hover{
+    display: block;
+    text-decoration: none;
+    color: green;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+
+#quem-somos-conteudo .intro h1{
+    text-align: center;
+    color: #151551;
+    font-size: 2em;
+    margin-bottom: 3%;
+}
+
+#quem-somos-conteudo .intro p{
+    text-align: justify;
+    color: black;
+}
+
+#quem-somos-conteudo .perfil{
+    margin-top: 6%;
+}
+
+#quem-somos-conteudo .perfil h2{
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    background: linear-gradient(to top,  #001a00,darkgreen,green);
+}
+
+#quem-somos-conteudo .perfil p{
+    text-align: justify;
+    padding: 0 3%;
+}
+/*
+ *  FIM DE QUEM SOMOS
+ */
+
+
+
+/*
+ *  PROJETOS
+ *  contract =>  estilização do conteudo da pagina "projetos" exceto folder
+ *  elements =>  imagens linkadas aos projetos da empresa
+ *  content  =>  projetos-conteudo, responsive, card*
+ */
+
+.projetos-folder{
+    background-image: url('../resources/images/projetos3.jpg');
+}
+
+.projetos-folder h1{
+    color: black;
+}
+
+#projetos-conteudo{
+    padding: 5% 10% 10% 10%;
+}
+
+#projetos-conteudo .card{
+    border: none;
+}
+
+#projetos-conteudo .card-img-top{
+    width: 100%; 
+    border: 3px solid green;  
+}
+
+#projetos-conteudo .card-body{
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: justify;
+    color: gray;
+}
+
+#projetos-conteudo .responsive{
+    padding: 0 6px;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+/*
+ *  FIM DE PROJETOS
+ */
+
+
+
+/*
+ *  SERVICOS
+ *
+ *  contract =>  estilização do conteudo da pagina "servicos" exceto folder
+ *  elements =>  conteudos textuais e imagens
+ *  content  =>  servicos-conteudo, servicos-topic, topic-*
+ */
+
+
+.servicos-folder{
+    background-image: url('../resources/images/eolica-escura.jpg') ;
+}
+
+.servicos-folder h1{
+    color: white;
+}
+
+#servicos-conteudo{
+    padding: 10% 5%;
+    float: left;
+}
+
+.servicos-topic{   
+    padding: 4%;
+    float: left;  
+}
+
+#topic-1 img{
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#topic-1 p{
+    width: 30%;
+    float: left;
+    text-align: justify;    
+}
+
+#topic-2 img{
+    width: 30%;
+    float: right;
+    border: 8px solid lightblue;
+}
+
+#topic-2 p{
+    width: 60%;
+    float: left;
+    text-align: justify;
+}
+
+#topic-3 img{
+    width: 30%;
+    float: left;
+    border: 5px solid orange;
+}
+
+#topic-3 p{
+    width: 60%;
+    float: right;
+    text-align: justify;
+}
+
+#topic-4 img{
+    width: 30%;
+    float: left;
+}
+
+#topic-4 p{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+    text-align: justify;
+}
+/*
+ *  FIM SERVICOS
+ */
+
+
+
+/*
+ *  CONTATO
+ *
+ *  contract =>  estilização do conteudo da pagina "contato"
+ *  elements =>  formulario de envio de email e conteudo informativo textual
+ *  content  =>  contato-conteudo, form, nome, telefone, email, file, submit, contato-info, info
+ */
+
+#contato-conteudo{
+    padding: 8%  8%;
+    height: 100%;
+    float: left;
+    background-image: url('../resources/images/sky.jpeg');  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contato-conteudo h1{
+    text-align: center;
+    color: #151551;
+    font-size: 1.8em;
+    margin-bottom: 8%;
+}
+
+#contato-conteudo .form{
+    float: left;
+    width: 40%;
+    background-color: white;
+    opacity: 0.8;
+    padding: 5% 5% 5% 5%;
+}
+
+#contato-conteudo .form input:focus,
+#contato-conteudo .form textarea:focus,
+#contato-conteudo .form select:focus {
+    border: 1px solid orange;
+}
+
+#contato-conteudo .form .nome{
+    width: 100%;
+    height: 50px;
+    border: 1px solid green;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+
+#contato-conteudo .form .telefone{
+    width: 45%;
+    height: 50px;
+    border: 1px solid green;
+    border-radius: 5px;
+    float: right;
+    margin-bottom: 5%;
+}
+
+#contato-conteudo .form .email{
+    width: 45%;
+    float: left;
+    height: 50px;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+#contato-conteudo .form .file{
+    width: 100%;
+    float: left;
+    height: 50px;
+    border-radius: 5px;
+    color: #151551;
+    margin-bottom: 5%;
+}
+
+#contato-conteudo .form .submit{
+    width:30% ;
+    height: 35px;
+    background-color: darkgreen;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+#contato-conteudo .form .submit:hover{
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: green;
+}
+
+#contato-conteudo .form select{
+    width: 100%;
+    float: left;
+    height: 50px;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-bottom: 5%;    
+}
+
+#contato-conteudo .form textarea{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 50px;
+    margin-bottom: 5%;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+#contato-conteudo .form p{
+    font-size: 0.9em;
+    color: grey;
+}
+
+#contato-conteudo .contato-info{    
+    float: right;
+    width: 45%;
+    color: gray;
+    text-align: justify;
+}
+
+#contato-conteudo .contato-info h1{
+    text-align: center;
+}
+
+#contato-conteudo .contato-info .info{
+    list-style: none;
+}
+
+#contato-conteudo .contato-info ul{    
+    float: left;
+    list-style: none;
+}
+
+#contato-conteudo .contato-info ul li{
+    margin-bottom: 8%;
+    float: left;
+    padding: 2%;
+}
+
+#contato-conteudo .contato-info .info img{
+    float: right;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4%;
+}
+
+#contato-conteudo .contato-info .info p{
+    margin: 0;
+    width: 70%;
+    float: left; 
+    color: gray;
+}
+/*
+ *  FIM DE CONTATO
+ */
+
+
+/*
+ *  FIM DE CONTEUDO ESPECIFICO
+ */
