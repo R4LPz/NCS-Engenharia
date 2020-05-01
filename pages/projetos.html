@@ -6,15 +6,7 @@
     <title>NCS Engenharia - Projetos</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../resources/normalize.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="../scripts/footer.js"></script>   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
 </head>
 <body id="projetos">
     
@@ -46,136 +38,251 @@
           </ul>
         </div>
       </nav>
-    <!--    FIM MENU    -->
-
+    
     <!--    INICIO FOLDER   -->
     <div class="folder projetos-folder">
         <div>
             <span><h1>Veja sobre nossas</h1></span>
             <span><h1>cases de sucesso</h1></span>
         </div>
-    </div>
-    <!--    INICIO FOLDER   -->        
+    </div>    
 
     <!--    INICIO CONTEUDO   -->
     <div id="projetos-conteudo">
+      <!-- card 1 -->
       <div class="responsive">
         <div class="card">
-          <img class="card-img-top" src="../resources/images/Fotos/Clínica Médica.jpeg" height="200"  alt="Imagem de capa do card">
-          <div class="card-body">
+          <a href=".modal-card-1" data-toggle="modal" > <!--  IMAGEM SUPERIOR DO CARD   -->            
+            <img class="card-img-top" src="../resources/images/Fotos/Clínica Médica.jpeg" height="200"  alt="Imagem de capa do card">
+          </a>
+          <div class="card-body"> <!--    TEXTO DO CORPO DO CARD-->
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
           </div>
         </div>
       </div>
 
+      <div class="modal fade modal-card-1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Descrição breve da Imagem</h5>            
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="../resources/images/Fotos/Clínica Médica.jpeg" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2 -->
       <div class="responsive">
         <div class="card">
-          <img class="card-img-top" src="../resources/images/Fotos/Adequação NR10.jpg" height="200" alt="Imagem de capa do card">
-          <div class="card-body">
+          <a href=".modal-card-2" data-toggle="modal"> <!--  IMAGEM SUPERIOR DO CARD   -->            
+            <img class="card-img-top" src="../resources/images/Fotos/Adequação NR10.jpg" height="200" alt="Imagem de capa do card">
+          </a>
+          <div class="card-body"> <!--    TEXTO DO CORPO DO CARD-->
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>                
           </div>
         </div>
       </div> 
 
+      <div class="modal fade modal-card-2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Descrição breve da Imagem</h5>            
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="../resources/images/Fotos/Adequação NR10.jpg" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 3 -->
       <div class="responsive">
         <div class="card">
-          <img class="card-img-top" src="../resources/images/Fotos/Cond. Vertical.jpeg" height="200" alt="Imagem de capa do card">
-          <div class="card-body">
+          <a href=".modal-card-3" data-toggle="modal" > <!--  IMAGEM SUPERIOR DO CARD   -->        
+            <img class="card-img-top" src="../resources/images/Fotos/Cond. Vertical.jpeg" height="200" alt="Imagem de capa do card">
+          </a>
+          <div class="card-body"> <!--    TEXTO DO CORPO DO CARD-->
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
           </div>
         </div> 
       </div>
 
+      <div class="modal fade modal-card-3" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Descrição breve da Imagem</h5>            
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="../resources/images/Fotos/Cond. Vertical.jpeg" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 4 -->
       <div class="responsive">
         <div class="card">
-          <img class="card-img-top" src="../resources/images/Fotos/grãos.jpg" height="200" alt="Imagem de capa do card">
-          <div class="card-body">
+          <a href=".modal-card-4" data-toggle="modal" > <!--  IMAGEM SUPERIOR DO CARD   -->
+            <img class="card-img-top" src="../resources/images/Fotos/grãos.jpg" height="200" alt="Imagem de capa do card">
+          </a>
+          <div class="card-body"> <!--    TEXTO DO CORPO DO CARD-->
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
           </div>
         </div> 
+      </div>
+
+      <div class="modal fade modal-card-4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Descrição breve da Imagem</h5>            
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="../resources/images/Fotos/grãos.jpg" width="100%">
+            </div>
+          </div>
+        </div>
       </div>
       
+      <!-- card 5 -->
       <div class="responsive">
         <div class="card">
-          <img class="card-img-top" src="../resources/images/Fotos/NeoOffice.jpeg" height="200" alt="Imagem de capa do card">
-          <div class="card-body">
+          <a href=".modal-card-5" data-toggle="modal"> <!--  IMAGEM SUPERIOR DO CARD   -->
+            <img class="card-img-top" src="../resources/images/Fotos/NeoOffice.jpeg" height="200" alt="Imagem de capa do card">
+          </a>
+          <div class="card-body"> <!--    TEXTO DO CORPO DO CARD-->
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
           </div>
         </div> 
       </div>
 
+      <div class="modal fade modal-card-5" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Descrição breve da Imagem</h5>            
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="../resources/images/Fotos/NeoOffice.jpeg" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 6 -->
       <div class="responsive">
         <div class="card">
-          <img class="card-img-top" src="../resources/images/Fotos/Supermercado.jpeg" height="200" alt="Imagem de capa do card">
-          <div class="card-body">
+          <a href=".modal-card-6" data-toggle="modal"> <!--  IMAGEM SUPERIOR DO CARD   -->
+            <img class="card-img-top" src="../resources/images/Fotos/Supermercado.jpeg" height="200" alt="Imagem de capa do card">
+          </a>
+          <div class="card-body"> <!--    TEXTO DO CORPO DO CARD-->
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
           </div>
         </div> 
       </div>
     </div>
-    <!--    INICIO CONTEUDO   -->
     
+    <div class="modal fade modal-card-6" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Descrição breve da Imagem</h5>            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="../resources/images/Fotos/Supermercado.jpeg" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  
     <!--  INICIO VOLTAR AO TOPO-->
     <div id="voltar-topo">
         <a href="#">Topo</a>
     </div>
-    <!--    FIM VOLTAR AO TOPO-->
-
+    
     <!--    INICIO PARCEIROS   -->
     <div class="parceiros">          
       <h1>Parceiros </h1>
       <div class="container">
         <section class="customer-logos slider">
-          <div class="slide">
+          <div class="slide"> <!-- ITEM DE PARCEIROS -->
             <a target="_blank" href="http://alsolenergia.com.br/">
               <img class="img" src="../resources/images/alsol.png">
             </a>
           </div>
-          <div class="slide">
+          <div class="slide"> <!-- ITEM DE PARCEIROS -->
             <a target="_blank" href="http://gruposetta.com.br/">
               <img class="img" src="../resources/images/setta.png">
             </a>
           </div>
-          <div class="slide">
+          <div class="slide"> <!-- ITEM DE PARCEIROS -->
             <a target="_blank" href="https://www.jrnempreendimentos.com/">
             <img class="img" src="../resources/images/jrn.webp">
-          </a>
-        </div>
-        <div class="slide">
-          <a target="_blank" href="https://www.itau.com.br/">
-            <img class="img" src="../resources/images/itau-logo.png">
-        </a>
+            </a>
+          </div>
+          <div class="slide"> <!-- ITEM DE PARCEIROS -->
+            <a target="_blank" href="https://www.itau.com.br/">
+              <img class="img" src="../resources/images/itau-logo.png">
+            </a>
+          </div>
+          <div class="slide"> <!-- ITEM DE PARCEIROS -->
+            <a target="_blank" href="http://www.cemig.com.br/pt-br/Paginas/default.aspx">
+              <img class="img" src="../resources/images/cemig-logo-logotipo.png">
+            </a>
+          </div>
+          <div class="slide"> <!-- ITEM DE PARCEIROS -->
+            <a target="_blank" href="https://www.aneel.gov.br/">
+              <img class="img" src="../resources/images/aneel-logo.png">
+            </a>
+          </div>
+          <div class="slide"> <!-- ITEM DE PARCEIROS -->
+            <a target="_blank" href="https://sicessolar.com.br/#produtoshome">
+              <img class="img" src="../resources/images/logo_sices_solar_rodape.png">
+            </a>
+          </div>
+          <div class="slide"> <!-- ITEM DE PARCEIROS -->
+            <a target="_blank" href="https://new.abb.com/br">
+              <img class="img" src="../resources/images/abb-logo.png">
+            </a>
+          </div>  
+        </section>
       </div>
-      <div class="slide">
-        <a target="_blank" href="http://www.cemig.com.br/pt-br/Paginas/default.aspx">
-          <img class="img" src="../resources/images/cemig-logo-logotipo.png">
-        </a>
-      </div>
-      <div class="slide">
-        <a target="_blank" href="https://www.aneel.gov.br/">
-          <img class="img" src="../resources/images/aneel-logo.png">
-        </a>
-      </div>
-      <div class="slide">
-        <a target="_blank" href="https://sicessolar.com.br/#produtoshome">
-          <img class="img" src="../resources/images/logo_sices_solar_rodape.png">
-        </a>
-      </div>
-      <div class="slide">
-        <a target="_blank" href="https://new.abb.com/br">
-          <img class="img" src="../resources/images/abb-logo.png">
-        </a>
-      </div>  
-    </section>
-    </div>
-    </div>
-    <!--    FIM PARCEIROS   -->
-
+    </div>     
 
     <!--    INICIO FOOTER  -->
     <div id="footer">   
       <a href="">contato</a>             
       <p>© NCS Engenharia  - todos os direitos reservados</p>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../scripts/footer.js"></script>  
 </body>
 </html>
