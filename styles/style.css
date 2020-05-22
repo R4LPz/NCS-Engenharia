@@ -41,10 +41,7 @@ body, html{
 
 #logo img{
     margin-left: 6%;   
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 20%;
-    
+    width: 12%;
 }
 
 #menu ul{   
@@ -92,17 +89,19 @@ body, html{
  *  content  =>  folder *
  */
 
+
+
 .folder{
     text-align: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;    
+    background-position: 0px -350px ;    
 }
 
 .folder div{
     margin-bottom: 3%;
-    padding: 10%;
+    padding: 5%;
 }
 
 .folder span{
@@ -564,31 +563,6 @@ body, html{
     text-align: center;
 }
 
-#quem-somos-conteudo hr{
-    margin-bottom: 5%;
-}
-
-#quem-somos-conteudo a{
-    display: block;
-    border:  1px solid green;
-    padding: 1.8%;
-    text-decoration: none;
-    color: white;
-    background: darkgreen;
-    border-radius: 5px;
-}
-
-#quem-somos-conteudo a:hover{
-    display: block;
-    text-decoration: none;
-    color: green;
-    background-color: white;
-    border: 1px solid green;
-    border-radius: 5px;
-    transition: 0.7s;
-}
-
-
 #quem-somos-conteudo .intro h1{
     text-align: center;
     color: #151551;
@@ -601,21 +575,54 @@ body, html{
     color: black;
 }
 
-#quem-somos-conteudo .perfil{
-    margin-top: 6%;
+.painel-1, .painel-2 {
+    width: 95% !important;
 }
 
-#quem-somos-conteudo .perfil h2{
-    text-align: center;
-    color: white;
-    font-size: 1.4em;
-    background: linear-gradient(to top,  #001a00,darkgreen,green);
+.painel-2 .card-img-top{
+    height: 470px !important;
 }
 
-#quem-somos-conteudo .perfil p{
+#quem-somos-conteudo .card{
+    border: none;
+}
+
+#quem-somos-conteudo .card-img-top{
+    width: 100%; 
+    height: 300px;  
+    padding: 0.2%;
+    border: 1px solid green;
+}
+
+
+#quem-somos-conteudo .card-body{
+    padding: 0%;
+    box-sizing: border-box;
     text-align: justify;
-    padding: 0 3%;
+    color: gray;
 }
+
+#quem-somos-conteudo .responsive{
+    padding: 0 6px;
+    margin: 3% 2.5%;
+    float: left;
+    width: 45%;
+}
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+
+
 /*
  *  FIM DE QUEM SOMOS
  */

@@ -10,8 +10,11 @@ $assunto = $_POST['assunto'];
 $mensagem_form = $_POST['message'];
 
 
-$to = "NCS-QUE-RECEBE@DOMINIO.COM";
-$remetente = "NCS-QUE-ENVIA@DOMINIO.COM"; // Deve ser um email válido do domínio
+$to = "ncs@ncsengenharia.com" .",";
+$to .= "jota.cunha@ncsengenharia.com" .",";
+$to .= "daniel.nasser@ncsengenharia.com" .",";
+$to .= "paulo.santos@ncsengenharia.com";
+$remetente = "contato@ncsengenharia.com"; // Deve ser um email válido do domínio
 $subject = "Email de Contato via site";
 
 $boundary = "XYZ-" . date("dmYis") . "-ZYX";
