@@ -50,16 +50,15 @@
           <h1>Preencha o formulario e nos envie sua mensagem</h1>          
           <form method="POST" action="../scripts/email.php" enctype="multipart/form-data">                 
               <input class="nome" type="text" name="name" placeholder="Seu nome" >
-              <input class="email" type="text" name="email" placeholder="Seu melhor email">
+              <input class="email" type="text" name="email" placeholder="Seu email">
               <input class="telefone" type="text" name="telefone" placeholder="Seu telefone">
               <p>Anexe seu arquivo</p>
               <input class="file" type="file" name="file" id="file">
               <p>Qual o assunto deseja tratar</p>
               <select name="assunto" id="">
-                  <option value="">assunto 1</option>
-                  <option value="">assunto 2</option> 
-                  <option value="">assunto 3</option>
-                  <option value="">assunto 4</option> 
+                  <option value="">Orçamento</option>
+                  <option value="">Contato</option> 
+                  <option value="">Informações</option>                  
               </select>
               <textarea placeholder="Digite sua mensagem" name="message" ></textarea>
               <input class="submit" type="submit" value="ENVIAR">
@@ -67,25 +66,31 @@
       </div>
       <!-- CONTEUDO LATERAL -->                          
       <div class="contato-info">
-          <h1>Titulo</h1>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales lobortis mauris, sit amet laoreet lorem imperdiet a.</p>
+          <h1>Contato</h1>
           <ul>
             <li>
               <div class="info">
-                <img src="../resources/images/wpp.png" alt="">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales lobortis mauris, sit amet laoreet lorem imperdiet a.</p>
+                <img class="simbol" src="../resources/images/localizacao.png" alt="">
+                <h5 style="color: green;">Endereço: </h5>
+                <h5>Rua Niterói, 428 - sala 02</h5>
+                <h5>Bairro Bom Jesus - Uberlândia-MG</h5>
               </div>
             </li>              
             <li>
-              <div class="info">
-                <img src="../resources/images/info.jpeg" alt="">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales lobortis mauris, sit amet laoreet lorem imperdiet a.</p>
+              <div class="info">                
+                <img class="simbol" src="../resources/images/wpp.png" alt="">
+                <h5 style="color: green;">Telefones:</h5>
+                <h5>(34) 99279-0008<span>&nbsp;&nbsp;<img src="../resources/images/wpp.png" width="4%" alt=""></span> </h5>
+                <h5>(34) 99120-8327<span> &nbsp;&nbsp;<img src="../resources/images/wpp.png" width="4%" alt=""></span> </h5>
+                <h5>(34) 99995-3981<span> &nbsp;&nbsp;<img src="../resources/images/wpp.png" width="4%" alt=""></span> </h5>
               </div>
             </li>
             <li>
               <div class="info">
-                <img src="../resources/images/mail.png" alt="">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales lobortis mauris, sit amet laoreet lorem imperdiet a.</p>
+                <img class="simbol" src="../resources/images/mail.png" alt="">
+                <br>
+                <h5 style="color: green;"> E-mail: </h5>
+                 <h5 > ncs@ncsengenharia.com</h5>
               </div>
             </li>
           </ul>

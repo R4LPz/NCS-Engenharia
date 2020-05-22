@@ -34,19 +34,25 @@ body, html{
 #menu{
     background: linear-gradient(to top, white, lightblue);
     width: 100%;   
-    height: 7%;
     border-bottom: 4px solid darkgreen;
     z-index: 2;
 }
 
 #logo img{
-    margin-left: 6%;   
-    width: 12%;
+    width: 100%;
+}
+
+#logo{
+    margin-left: 30%;    
+    width: 8%;
+    
 }
 
 #menu ul{   
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1em;
+    margin-left: 8%;
+    
 }
 
 #menu ul a{    
@@ -101,7 +107,7 @@ body, html{
 
 .folder div{
     margin-bottom: 3%;
-    padding: 5%;
+    padding: 8%;
 }
 
 .folder span{
@@ -136,9 +142,6 @@ body, html{
 
 }
 
-.folder span:nth-child(2){
-    animation-delay: 0.08s;
-}
 /*
  *  FIM DE FOLDER
  */
@@ -558,6 +561,18 @@ body, html{
     background-image: url('../resources/images/2658311.jpg');
 }
 
+.seta{
+    animation-name: seta;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes seta{
+    50%{
+        transform: translateY(15%);
+    }
+}
+
 #quem-somos-conteudo{
     padding: 5% 10%;
     text-align: center;
@@ -575,13 +590,6 @@ body, html{
     color: black;
 }
 
-.painel-1, .painel-2 {
-    width: 95% !important;
-}
-
-.painel-2 .card-img-top{
-    height: 470px !important;
-}
 
 #quem-somos-conteudo .card{
     border: none;
@@ -891,9 +899,10 @@ body, html{
 
 #contato-conteudo .contato-info{    
     float: right;
-    width: 45%;
+    width: 40%;
     color: gray;
     text-align: justify;
+    
 }
 
 #contato-conteudo .contato-info h1{
@@ -911,26 +920,28 @@ body, html{
 
 #contato-conteudo .contato-info ul li{
     margin-bottom: 8%;
+    width: 100%;
     float: left;
     padding: 2%;
+    text-align: left;
 }
 
-#contato-conteudo .contato-info .info img{
+#contato-conteudo .contato-info .info .simbol{
     float: right;    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: 3%;
     width: 15%;
     border: 1px solid black;
     border-radius: 5px;
     padding: 4%;
+    background: linear-gradient(to left bottom, lightblue, white);
 }
 
-#contato-conteudo .contato-info .info p{
+#contato-conteudo .contato-info .info h5{
     margin: 0;
-    width: 70%;
+    padding: 0;
+    width: 80%;
     float: left; 
-    color: gray;
+    color: #151551;
 }
 /*
  *  FIM DE CONTATO
