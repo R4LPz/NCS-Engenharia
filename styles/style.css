@@ -43,16 +43,18 @@ body, html{
 }
 
 #logo{
-    margin-left: 30%;    
-    width: 8%;
-    
+    margin-left: 10%;    
+    width: 12%;
+}
+
+#navbarNav{
+    margin-right: 12%;
 }
 
 #menu ul{   
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1em;
-    margin-left: 8%;
-    
+    margin-left: auto;
 }
 
 #menu ul a{    
@@ -171,10 +173,6 @@ body, html{
 }
 
 
-#footer hr{
-    margin: 2% 0px;
-    clear: both;
-}
 
 #footer h1{
     font-size: 1.6em;
@@ -190,9 +188,6 @@ body, html{
  */
 
 
-#contato{
-    background: rgb(243, 250, 250) ;
-}
 
 .parceiros h1{
     font-size: 1.7em;
@@ -442,55 +437,35 @@ body, html{
     font-size: 1em;
 }
 
-.index-conteudo .content-left{
-    width: 47%;
-    float: left;
-    padding: 3%;
-    box-sizing: border-box; 
+.container{
+    background: none;
 }
 
-.index-conteudo .content-left h3{
+.col-sm h3{
     text-align: center;
     color:    #151551;
     font-size: 1.4em;
     margin-bottom: 4%;
 }
-
-.index-conteudo .content-left p{
-    text-align: justify;  
-    font-size: 1em;
-}
-
-.index-conteudo .content-left .img1{
-    border-radius: 3px;
-    margin-bottom: 3%;    
-    width: 90%;
-    margin-left: 5%;
-    
-    box-sizing: border-box;
-}
-
-.index-conteudo .content-right{
-    width: 47%;
-    float: right;
-    
-}
-
-.index-conteudo .content-right h3{
-    text-align: center;
-    font-size: 1.4em;
-    color:    #151551;
-}
-
-.index-conteudo .content-right h4{
+.col-sm h4{
     text-align: center;
     font-size: 1.3em;
     color:    #151551;
 }
 
-.index-conteudo .content-right p{
-    text-align: justify;
+.col-sm p{
+    text-align: justify;  
+    font-size: 1em;
 }
+
+.col-sm img{
+    border-radius: 3px;
+    margin-bottom: 3%;    
+    width: 90%;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+
 
 .index-cards{
     clear: both;
@@ -498,21 +473,13 @@ body, html{
 }
 
 .index-cards .card{
-    float: left;
-    height: 23rem;
-    width: 29%;  
+    float: left;  
     border: 3px solid black;
     background-color: white;
 }
 
-.index-cards .card-mid{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
 .index-cards .card:hover{
-    float: left;
-    width: 29%;    
+    float: left;   
     border: 3px solid darkgreen;
     transform: scale(1.05,1.05);
     transition: 0.5s;
@@ -526,6 +493,7 @@ body, html{
 
 .index-cards .card-body{
     padding: 10% 10%;
+    height: auto;
     text-align: center;
     font-size: 0.9em;
 }
@@ -561,6 +529,14 @@ body, html{
     background-image: url('../resources/images/2658311.jpg');
 }
 
+.carousel-caption h1{
+margin-bottom: 2em;
+color: #151551;
+font-size: 2.8em;
+border-radius: 10px;
+padding: 1%;
+}
+
 .seta{
     animation-name: seta;
     animation-duration: 1s;
@@ -569,7 +545,7 @@ body, html{
 
 @keyframes seta{
     50%{
-        transform: translateY(15%);
+        transform: translateY(45%);
     }
 }
 
@@ -593,42 +569,22 @@ body, html{
 
 #quem-somos-conteudo .card{
     border: none;
+
 }
 
 #quem-somos-conteudo .card-img-top{
-    width: 100%; 
-    height: 300px;  
     padding: 0.2%;
     border: 1px solid green;
+    height: 300px;
 }
 
 
 #quem-somos-conteudo .card-body{
-    padding: 0%;
-    box-sizing: border-box;
+
     text-align: justify;
     color: gray;
 }
 
-#quem-somos-conteudo .responsive{
-    padding: 0 6px;
-    margin: 3% 2.5%;
-    float: left;
-    width: 45%;
-}
-  
-@media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-}
-  
-@media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-}
 
 
 /*
@@ -789,39 +745,33 @@ body, html{
  *  elements =>  formulario de envio de email e conteudo informativo textual
  *  content  =>  contato-conteudo, form, nome, telefone, email, file, submit, contato-info, info
  */
+#contato{
+    background:  rgb(243, 250, 250);
+}
 
-#contato-conteudo{
-    padding: 8%  8%;
-    height: 100%;
-    float: left;
+#contato .table{
     background-image: url('../resources/images/sky.jpeg');  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 8%;
 }
 
-#contato-conteudo h1{
+#contato .table h1{
     text-align: center;
     color: #151551;
     font-size: 1.8em;
     margin-bottom: 8%;
 }
 
-#contato-conteudo .form{
-    float: left;
-    width: 40%;
+#contato .form{
     background-color: white;
     opacity: 0.8;
-    padding: 5% 5% 5% 5%;
+    padding: 3%;
 }
 
-#contato-conteudo .form input:focus,
-#contato-conteudo .form textarea:focus,
-#contato-conteudo .form select:focus {
-    border: 1px solid orange;
-}
 
-#contato-conteudo .form .nome{
+#contato .form .nome{
     width: 100%;
     height: 50px;
     border: 1px solid green;
@@ -829,16 +779,16 @@ body, html{
     border-radius: 5px;
 }
 
-#contato-conteudo .form .telefone{
+#contato .form .telefone{
     width: 45%;
     height: 50px;
-    border: 1px solid green;
+    border: 1px solid green;  
     border-radius: 5px;
     float: right;
     margin-bottom: 5%;
 }
 
-#contato-conteudo .form .email{
+#contato .form .email{
     width: 45%;
     float: left;
     height: 50px;
@@ -847,7 +797,7 @@ body, html{
     margin-bottom: 5%;
 }
 
-#contato-conteudo .form .file{
+#contato .form .file{
     width: 100%;
     float: left;
     height: 50px;
@@ -856,16 +806,17 @@ body, html{
     margin-bottom: 5%;
 }
 
-#contato-conteudo .form .submit{
-    width:30% ;
+#contato .form .submit{
+    width:100% ;
     height: 35px;
     background-color: darkgreen;
     border: none;
     border-radius: 4px;
     color: white;
+    display: block;
 }
 
-#contato-conteudo .form .submit:hover{
+#contato .form .submit:hover{
     background-color: white;
     border: 1px solid green;
     border-radius: 4px;
@@ -873,7 +824,7 @@ body, html{
     transition: 0.5s;
 }
 
-#contato-conteudo .form select{
+#contato .form select{
     width: 100%;
     float: left;
     height: 50px;
@@ -882,7 +833,7 @@ body, html{
     margin-bottom: 5%;    
 }
 
-#contato-conteudo .form textarea{
+#contato .form textarea{
     width: 100%;
     max-width: 100%;
     min-width: 100%;
@@ -892,55 +843,30 @@ body, html{
     border-radius: 5px;
 }
 
-#contato-conteudo .form p{
-    font-size: 0.9em;
-    color: grey;
-}
 
-#contato-conteudo .contato-info{    
-    float: right;
-    width: 40%;
-    color: gray;
-    text-align: justify;
+
+.info-cont{
+    float: left;
+    margin-top: 2em;
+    width: 100%;
     
 }
-
-#contato-conteudo .contato-info h1{
-    text-align: center;
-}
-
-#contato-conteudo .contato-info .info{
-    list-style: none;
-}
-
-#contato-conteudo .contato-info ul{    
-    float: left;
-    list-style: none;
-}
-
-#contato-conteudo .contato-info ul li{
-    margin-bottom: 8%;
-    width: 100%;
-    float: left;
-    padding: 2%;
-    text-align: left;
-}
-
-#contato-conteudo .contato-info .info .simbol{
-    float: right;    
-    margin-top: 3%;
+.info .icon{
+    float: right;
     width: 15%;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 4%;
-    background: linear-gradient(to left bottom, lightblue, white);
+    padding: 4%;    
 }
 
-#contato-conteudo .contato-info .info h5{
-    margin: 0;
-    padding: 0;
-    width: 80%;
-    float: left; 
+.info .simbol{
+    width: 5%;
+}
+
+#contato  .info h5{
+    float: left;
+    width: 60%;
+    margin-left: 15%;
     color: #151551;
 }
 /*

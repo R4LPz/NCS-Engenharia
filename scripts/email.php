@@ -1,5 +1,6 @@
 <?php
 
+
 if(isset($_POST['email']) && !empty($_POST['email']))
 
 $nome = $_POST['name'];
@@ -61,10 +62,14 @@ if(file_exists($arquivo["tmp_name"]) and !empty($arquivo)){
     $mensagem.= "$body\n";
 }
 
-
 if(mail($to, $subject, $mensagem, $headers)){
-    echo "<br><br><center><b><font color='green'>Mensagem enviada com sucesso!";
-}else{
-    echo "<br><br><center><b><font color='red'>Ocorreu um erro ao enviar a mensagem!";
-}
+    $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
+    echo "<script>
+    alert('Mensagem enviada com sucesso! Em breve estaremos respondendo.');
+    window.location.href = 'http://www.ncsengenharia.com/pages/contato.html';
+    </script>";
+    } else {
+        echo "<script>alert(‘Não foi possível enviar o contato, tente mais tarde.’);
+        history.go(-1) </script>";
+    }
 ?>

@@ -26,76 +26,74 @@
           <li class="nav-item quem-somos">
             <a class="nav-link" href="quem-somos.html">Quem Somos</a>
           </li>
-          <!--
-
-            <li class="nav-item projetos">
-              <a class="nav-link" href="projetos.html">Projetos</a>
-            </li>
-            <li class="nav-item servicos">
-              <a class="nav-link" href="servicos.html">Serviços</a>
-            </li>
-
-          -->
-            <li class="nav-item contato">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
+          <li class="nav-item contato">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <!--    INICIO CONTEUDO   -->
-    <div id="contato-conteudo">
-      <!-- FORMULARIO--> 
-      <div class="form">              
+
+    <div class="table">
+
+      <div class="row">
+
+        <div class="col-sm form">
           <h1>Preencha o formulario e nos envie sua mensagem</h1>          
-          <form method="POST" action="../scripts/email.php" enctype="multipart/form-data">                 
-              <input class="nome" type="text" name="name" placeholder="Seu nome" >
-              <input class="email" type="text" name="email" placeholder="Seu email">
-              <input class="telefone" type="text" name="telefone" placeholder="Seu telefone">
-              <p>Anexe seu arquivo</p>
-              <input class="file" type="file" name="file" id="file">
-              <p>Qual o assunto deseja tratar</p>
-              <select name="assunto" id="">
-                  <option value="">Orçamento</option>
-                  <option value="">Contato</option> 
-                  <option value="">Informações</option>                  
+          <form method="POST" action="../scripts/email.php" enctype="multipart/form-data">     
+            <div class="form-group">
+              <input class="nome form-control" type="text" name="name" placeholder="Seu nome" required>
+              <input class="email form-control" type="text" name="email" placeholder="Seu email" required>
+              <input class="telefone form-control" type="text" name="telefone" placeholder="Seu telefone" required>
+            </div>    
+            <div class="form-group">
+              <label >Anexe seu arquivo</label>
+              <input class="form-control-file file" type="file" name="file" id="file">
+            </div>
+            <div class="form-group">              
+              <label >Qual assunto deseja tratar ?</label>
+              <select name="assunto" class="form-control">
+                <option value="">Orçamento</option>
+                <option value="">Contato</option> 
+                <option value="">Informações</option>                  
               </select>
-              <textarea placeholder="Digite sua mensagem" name="message" ></textarea>
+            </div>        
+              <textarea class="form-control" placeholder="Digite sua mensagem" name="message" required  ></textarea>
               <input class="submit" type="submit" value="ENVIAR">
           </form>
-      </div>
-      <!-- CONTEUDO LATERAL -->                          
-      <div class="contato-info">
+        </div>
+
+        <div class="col-sm info">
           <h1>Contato</h1>
-          <ul>
-            <li>
-              <div class="info">
-                <img class="simbol" src="../resources/images/localizacao.png" alt="">
-                <h5 style="color: green;">Endereço: </h5>
-                <h5>Rua Niterói, 428 - sala 02</h5>
-                <h5>Bairro Bom Jesus - Uberlândia-MG</h5>
-              </div>
-            </li>              
-            <li>
-              <div class="info">                
-                <img class="simbol" src="../resources/images/wpp.png" alt="">
-                <h5 style="color: green;">Telefones:</h5>
-                <h5>(34) 99279-0008<span>&nbsp;&nbsp;<img src="../resources/images/wpp.png" width="4%" alt=""></span> </h5>
-                <h5>(34) 99120-8327<span> &nbsp;&nbsp;<img src="../resources/images/wpp.png" width="4%" alt=""></span> </h5>
-                <h5>(34) 99995-3981<span> &nbsp;&nbsp;<img src="../resources/images/wpp.png" width="4%" alt=""></span> </h5>
-              </div>
-            </li>
-            <li>
-              <div class="info">
-                <img class="simbol" src="../resources/images/mail.png" alt="">
+          <div class="container info-cont">
+                <img class="icon" src="../resources/images/localizacao.png" alt="">          
+                <h5>
+                <span style="color: green;">Endereço: </span><br>
+                Rua Niterói, 428 - sala 02 <br>
+                Bairro Bom Jesus - Uberlândia-MG</h5>          
+          </div>              
+            <div class="container">              
+                <img class="icon" src="../resources/images/wpp.png" alt="">
+                <h5>
+               <span style="color: green;">Telefones</span><br>
+                (34) 99279-0008<span><img class="simbol" src="../resources/images/wpp.png"  alt=""></span> <br>
+                (34) 99120-8327<span> <img class="simbol" src="../resources/images/wpp.png"  alt=""></span> <br>
+                (34) 99995-3981<span> <img class="simbol" src="../resources/images/wpp.png"  alt=""></span> </h5>              
+            </div>
+            <div class="container">              
+                <img class="icon" src="../resources/images/mail.png" alt="">
                 <br>
-                <h5 style="color: green;"> E-mail: </h5>
-                 <h5 > ncs@ncsengenharia.com</h5>
-              </div>
-            </li>
-          </ul>
+                <h5>
+                <span style="color: green;">E-mail</span><br>
+                ncs@ncsengenharia.com</h5>              
+            </div>
+
+        </div>
       </div>
+
     </div>
+
+
     
     <!--    INICIO VOLTAR AO TOPO   -->
     <div id="voltar-topo">
