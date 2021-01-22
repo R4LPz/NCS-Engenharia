@@ -12,16 +12,17 @@ Utilizei inicialmente as estruturas de hypertexto do HTML para produzir estrutur
 
 :books: [Onde Aprendi HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 
-![Home](https://github.com/RafaelLucasP/NCS-Engenharia/blob/master/git-images/sobre.png)
-
 Em sequencia utilizei uma estrutura CSS para dar cores e animações ao sistema ( importante resaltar que por pedido da empresa todas as folhas de estilo foram feitas em um único arquivo, de forma que facilitasse a edição ).
 
 :books: [Onde Aprendi CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
-![Home](https://github.com/RafaelLucasP/NCS-Engenharia/blob/master/git-images/email.png)
+![Home](https://github.com/RafaelLucasP/NCS-Engenharia/blob/master/git-images/sobre.png)
 
 Por fim como a empresa tinha necessidade de não so de uma estrutura de divulgação mas também de um meio de comunicação, utilizei o PHP como uma ferramenta de envio de emails.
+
 :books: [Onde Aprendi a enviar emails com PHP](https://www.devmedia.com.br/enviando-email-com-php/37216#:~:text=Criando%20o%20c%C3%B3digo%20PHP%20de%20envio%20de%20email&text=%2F%2Fenviar%20%2F%2F%20emails%20para,%5Cn%22%3B%20%24headers%20.)
+
+![Home](https://github.com/RafaelLucasP/NCS-Engenharia/blob/master/git-images/email.png)
 
 # ℹ️ Informações e Considerações 
 
